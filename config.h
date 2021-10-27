@@ -12,10 +12,13 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	//{run_command, "%s",  "/home/binette/.local/bin/slstatus/resources.sh" },
+	{ battery_perc, " %s%%", "BAT1" },
+        { battery_state, "%s", "BAT1" },
+        { battery_remaining, " %s |", "BAT1" },
 	{ram_used, "[RAM] %s/", NULL },
 	{ram_total, "%s ", NULL },
 	{cpu_perc, "[CPU] %s%% ", NULL },
-	{disk_used, "[STO] %s/", "/home/media/exthdd" },
-	{disk_total, "%s | ", "/home/media/exthdd" },
+	{disk_used, "[STO] %s/", "/home" },
+	{disk_total, "%s | ", "/home" },
 	{ datetime, "%s",     "%F [%T]" },
 };
