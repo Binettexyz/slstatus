@@ -11,12 +11,14 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function format          argument */
-	//{run_command, "%s",  "/home/binette/.local/bin/slstatus/resources.sh" },
-	{ battery_perc, " %s%%", "BAT1" },
-	{ram_used, "[RAM] %s/", NULL },
-	{ram_total, "%s ", NULL },
-	{cpu_perc, "[CPU] %s%% ", NULL },
-	{disk_used, "[STO] %s/", "/home" },
-	{disk_total, "%s | ", "/home" },
-	{ datetime, "%s",     "%F [%T]" },
-};
+	{run_command, "[%s - ",  "/home/binette/.local/bin/statusbar/sb-nettraf" },
+	{run_command, "%s] ",  "/home/binette/.local/bin/statusbar/sb-internet" },
+//	{cpu_perc, "[ %s%% | ", NULL },
+	{temp, "%s°c] ",        "/sys/class/thermal/thermal_zone0/temp" },
+	{run_command, "[%s] ",  "/home/binette/.local/bin/statusbar/sb-volume" },
+	{run_command, "[%s] | ",  "/home/binette/.local/bin/statusbar/sb-battery" },
+	{run_command, "%s",  "date '+[%b %d (%a) %Y - %I:%M%p] '" },
+	//{disk_used, "[STO] %s/", "/home" },
+	//{disk_total, "%s | ", "/home" },*/
+	};
+
