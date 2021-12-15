@@ -1,4 +1,6 @@
-{ stdenv, fetchurl, libX11, libXft, libXinerama }:
+{ stdenv, lib, fetchurl, libX11, libXft, libXinerama }:
+
+with lib;
 
 stdenv.mkDerivation {
   name = "slstatus-head";
