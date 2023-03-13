@@ -13,7 +13,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{run_command, "[%s - ",  "/home/binette/.local/bin/statusbar/sb-nettraf" },
 	{run_command, "%s] ",  "/home/binette/.local/bin/statusbar/sb-internet" },
-  {ram_used, "^c#eba0ac^^b#1e1d2d^󰆼 %s% ", NULL },
+  //{ram_used, "^c#eba0ac^^b#1e1d2d^󰆼 %s% ", NULL },
 	{cpu_perc, "[ %s | ", NULL },
 	{temp, "%s°c] ",        "/sys/class/thermal/thermal_zone0/temp" },
 //	{run_command, "[%s] ",  "/home/binette/.local/bin/statusbar/sb-volume" },
