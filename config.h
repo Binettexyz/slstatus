@@ -4,7 +4,7 @@
 const unsigned int interval = 1000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = "NOINFO";
+static const char unknown_str[] = "n/a";
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -14,7 +14,7 @@ static const struct arg args[] = {
 	{run_command, "[%s - ",  "/home/binette/.local/bin/statusbar/sb-nettraf" },
 	{run_command, "%s] ",  "/home/binette/.local/bin/statusbar/sb-internet" },
 	{cpu_perc, "[ %s | ", NULL },
-  {run_command, "^c#eba0ac^ ^b#1e1d2d^ 󰆼 %s% ", "free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)" },
+  {ram_used, "^c#eba0ac^^b#1e1d2d^󰆼 %s% ", NULL },
 	{temp, "%s°c] ",        "/sys/class/thermal/thermal_zone0/temp" },
 //	{run_command, "[%s] ",  "/home/binette/.local/bin/statusbar/sb-volume" },
 //	{run_command, "[%s] | ",  "/home/binette/.local/bin/statusbar/sb-battery" },
