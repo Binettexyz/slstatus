@@ -12,7 +12,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{cpu_perc, " %s ", NULL },
-  {ram_used, "󰆼 %s% ", NULL },
+//  {ram_used, "󰆼 %s% ", NULL },
   {wifi_perc, " %s% ", NULL },
   {datetime,  "%s ", "%a %d %B" },
   {datetime,  "%s ", "%H:%M" },
