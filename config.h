@@ -14,7 +14,7 @@ static const struct arg args[] = {
 	{cpu_perc, " %s ", NULL },
   {ram_used, "󰆼 %s% ", NULL },
   {wifi_perc, " %s% ", NULL },
-  {datetime,  "%s ", "%a %d %B" }
-  {datetime,  "%s ", "%H:%M" }
+  {datetime,  "%s ", "%a %d %B" },
+  {datetime,  "%s ", "%H:%M" },
 	};
 
